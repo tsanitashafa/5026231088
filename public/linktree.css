@@ -1,0 +1,113 @@
+body {
+    background-image: url(img/scarletbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+}
+.container {
+    max-width: 720px;
+}
+.username, .tagline, .welcome {
+    text-align: center;
+    color: #000000;
+    font-weight: bolder;
+}
+.username {
+    font-size: 1.3rem;
+}
+.tagline {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+.welcome {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.promo-banner {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.promo-banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 20px;
+}
+.promo-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+}
+.banner-text {
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    z-index: 2;
+    color: white;
+    font-size: 1rem;
+}
+.link-card {
+    color: #000;
+    background-color: white;
+    border-radius: 29px;
+    padding: 11px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, border 0.3s;
+    border: 3px solid white;
+}
+.link-card:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.link-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -10px;
+    margin-left: -5px; 
+}
+.link-icon img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+.link-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.more-options {
+    color: #838383;
+    font-size: 14px;
+}
+.option-banner {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    z-index: 2;
+    font-size: 14px;
+    color: #f0eded;
+}
+.header {
+    width: 36px; 
+    height: 36px; 
+    background-color: rgba(21,9,15,0.3);
+}
