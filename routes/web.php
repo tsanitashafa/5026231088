@@ -8,7 +8,7 @@ use App\Http\Controllers\Link ;
 // System.out.println();
 // Disini pakai ::
 Route::get('/', function () { // internal controller atau inline controller ini boleh tanpa nama
-    return view('welcome');
+    return view('frontend');
 });
 
 Route::get('halo', function () {
@@ -23,4 +23,48 @@ Route::get('hello', [Link::class,'helloword'] );
 
 Route::get('pertama', function () {
 	return view('pertama');
+});
+
+Route::get('bootstrap1', function () {
+	return view('bootstrap1');
+});
+
+Route::get('displayuserinterface', function () {
+	return view('displayuserinterface');
+});
+
+Route::get('helperologin', function () {
+	return view('helperologin');
+});
+
+Route::get('js1', function () {
+	return view('js1');
+});
+
+Route::get('js2', function () {
+	return view('js2');
+});
+
+Route::get('linktree', function () {
+	return view('linktree');
+});
+
+Route::get('template1', function () {
+	return view('template1');
+});
+
+Route::get('uts', function () {
+	return view('uts');
+});
+
+Route::get('latihanuts', function () {
+	return view('latihanuts');
+});
+
+Route::get('frontend', function () {
+	return view('frontend');
+});
+
+Route::get('linkfe', function () {
+	return view('linkfe');
 });
