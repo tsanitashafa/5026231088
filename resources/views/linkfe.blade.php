@@ -3,8 +3,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Front End Shafa</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <link rel="icon" type="image/x-icon" href="assets/img/Beige Queen Beauty Elegant Logo (2).png" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet"/>
   <style>
     body {
@@ -12,9 +14,12 @@
     }
   </style>
 </head>
-<body class="bg-[#fbe9f2] min-h-screen flex items-start justify-center p-6">
-  <main class="max-w-7xl w-full flex gap-6">
-    <!-- Left container -->
+<body class="bg-[#fbe9f2] min-h-screen flex flex-col">
+  <!-- Navbar Horizontal -->
+  @include('navbar')
+
+  <!-- Main Content -->
+  <main class="max-w-7xl w-full mx-auto flex gap-6 p-6 flex-1">
     <section class="flex flex-col w-[30%] max-w-[400px]">
         <header class="flex items-center space-x-2 h-16 mb-4">
             <img src="assets/img/Beige Queen Beauty Elegant Logo (2).png" width="40" height="40" alt="Logo" class="w-10 h-10"/>
