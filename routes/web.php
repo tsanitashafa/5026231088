@@ -6,6 +6,7 @@ use App\Http\Controllers\Pegawai2Controller ;
 use App\Http\Controllers\BlogController ;
 use App\Http\Controllers\PegawaiController ;
 use App\Http\Controllers\RotiController ;
+use App\Http\Controllers\KeranjangController ;
 // import java.io;
 
 
@@ -102,3 +103,9 @@ Route::get('/roti/edit/{id}', [RotiController::class,'edit'] );
 Route::post('/roti/update', [RotiController::class,'update'] );
 Route::get('/roti/hapus/{id}', [RotiController::class,'hapus'] );
 Route::get('/roti/cari', [RotiController::class,'cari'] );
+
+//crud keranjangbelanja
+Route::get('/keranjangbelanja', [KeranjangController::class,'index'] );
+Route::get('/keranjangbelanja/tambah', [KeranjangController::class,'tambah'] );
+Route::post('/keranjangbelanja/beli', [KeranjangController::class,'store'] );
+Route::get('/keranjangbelanja/hapus/{id}', [KeranjangController::class,'hapus'] );
