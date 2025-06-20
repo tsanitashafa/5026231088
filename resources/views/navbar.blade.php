@@ -49,7 +49,7 @@
                         <a class="nav-link" href="/roti">Tugas CRUD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">EAS</a>
+                        <a class="nav-link" href="/uas">EAS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/keranjangbelanja">Latihan 1</a>

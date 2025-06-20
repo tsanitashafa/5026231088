@@ -9,6 +9,7 @@ use App\Http\Controllers\RotiController ;
 use App\Http\Controllers\KeranjangController ;
 use App\Http\Controllers\KaryawanController ;
 use App\Http\Controllers\Karyawan2Controller ;
+use App\Http\Controllers\MyKaryawanController ;
 // import java.io;
 
 
@@ -123,3 +124,13 @@ Route::get('/karyawan2', [Karyawan2Controller::class, 'index']);
 Route::get('/karyawan2/tambah', [Karyawan2Controller::class, 'tambah']);
 Route::post('/karyawan2/store', [Karyawan2Controller::class, 'store']);
 Route::get('/karyawan2/hapus/{id}', [Karyawan2Controller::class, 'hapus']);
+
+//crud uas
+Route::get('/uas', [MyKaryawanController::class,'index'] );
+Route::get('/roti/tambah', [RotiController::class,'tambah'] );
+Route::post('/roti/store', [RotiController::class,'store'] );
+Route::get('/uas/edit/{id}', [MyKaryawanController::class,'edit'] );
+Route::get('/uas/view/{id}', [MyKaryawanController::class,'view'] );
+Route::post('/uas/update', [MyKaryawanController::class,'update'] );
+Route::get('/roti/hapus/{id}', [RotiController::class,'hapus'] );
+
